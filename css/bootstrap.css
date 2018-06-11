@@ -1147,7 +1147,7 @@ img {
   height: auto;
 }
 .img-circle {
-  border-radius: 30%;
+  border-radius: 50%;
 }
 hr {
   margin-top: 20px;
