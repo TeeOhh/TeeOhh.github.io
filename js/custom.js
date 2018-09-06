@@ -117,8 +117,8 @@
                 thumbs: false,
                 nav:false,
                 autoplay: true,
-                smartSpeed: 10000000,
-                dotsSpeed:600,
+                smartSpeed: 1000,
+                dotsSpeed: 600000000,
             })
         }
     }
