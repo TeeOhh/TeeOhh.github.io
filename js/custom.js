@@ -117,7 +117,7 @@
                 thumbs: false,
                 nav:false,
                 autoplay: true,
-                smartSpeed: 1000,
+                smartSpeed: 2000,
                 dotsSpeed:600,
             })
         }
@@ -184,7 +184,7 @@
     blog_2Carousel();
     /*===========End blogCarousel2 js ===========*/
     
-    /*===========Start testimonialdslider js ===========*/
+    /*===========Start serviceslider js ===========*/
     function servicesSlider(){
         var clients_slider = $(".services-slider");
         if( clients_slider.length ){
@@ -214,7 +214,7 @@
         }
     }
     servicesSlider();
-    /*===========End testimonialdslider js ===========*/
+    /*===========End serviceslider js ===========*/
     
     /*===========Start Image fill plugin js ===========*/
     $('.img-fill-container').imagefill();
