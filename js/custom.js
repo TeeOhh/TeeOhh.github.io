@@ -117,7 +117,7 @@
                 thumbs: false,
                 nav:false,
                 autoplay: true,
-                slideSpeed : 5000,
+                slideSpeed : 7000,
                 smartSpeed: 1600,
                 dotsSpeed: 600,
             })
