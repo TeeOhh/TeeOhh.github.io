@@ -116,7 +116,7 @@
                 items: 1,
                 thumbs: false,
                 nav:false,
-                autoplay: 10000,
+                autoplay: true,
                 smartSpeed: 1600,
                 dotsSpeed: 600,
             })
