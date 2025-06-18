@@ -1,650 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Olson</title>
-        <!--    favicon-->
-        <link rel="shortcut icon" href="image/faveicon.png" type="image/x-icon">
-        
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/themify-icons.css">
-        <!-- strock-Gap-icon -->
-        <link rel="stylesheet" href="vendors/linear-icon/style.css">
-        <!-- magnific popup-->
-        <link rel="stylesheet" href="vendors/magnific-popup/magnific-popup.css">
-        <!--        owl carousel css-->
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/animate.css">
-        <!-- RS5.0 Main Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="vendors/revolution/css/settings.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taylor Olson</title>
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+    integrity="sha512-..." 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+</head>
+<body>
 
-        <!-- RS5.0 Layers and Navigation Styles -->
-        <link rel="stylesheet" type="text/css" href="vendors/revolution/css/layers.css">
-        <link rel="stylesheet" type="text/css" href="vendors/revolution/css/navigation.css">
-        <!--    css-->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-        <!-- Preloader-->
-        <div class="loader-container">
-			<div class="loader">
-				<div id="mask">
-                    <svg class="preloader-icon" width="34" height="38" viewbox="0 0 34 38">
-                      <path class="preloader-path" stroke-dashoffset="0" d="M29.437 8.114L19.35 2.132c-1.473-.86-3.207-.86-4.68 0L4.153 8.114C2.68 8.974 1.5 10.56 1.5 12.28v11.964c0 1.718 1.22 3.306 2.69 4.165l10.404 5.98c1.47.86 3.362.86 4.834 0l9.97-5.98c1.472-.86 2.102-2.45 2.102-4.168V12.28c0-1.72-.59-3.306-2.063-4.166z"></path>
-                    </svg>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Taylor Olson</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Teaching</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="machine-ethics-seminar.html">Machine Ethics Seminar</a></li>
+              <li><a class="dropdown-item" href="#">Intro to AI</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content: 2x2 Grid -->
+  <div class="container my-5">
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="p-3 border bg-light">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <img style="width: 100%" src="image/headshot-25.jpg">
               </div>
-			</div>
-		</div>
-        <!-- End Preloader-->
-        <header>
-            <nav class="navbar navbar-default header3 navbar-fixed-top" data-spy="affix" data-offset-top="80">
-                <div class="container-fluid">
-                    <div class="float-left social-icon">
-                        <ul>
-                            <li><a target="_blank" href="https://www.linkedin.com/in/taylorolson23/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a target="_blank" href="https://github.com/TeeOhh"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="burger-icon">
-                        <span class="icon-bar top"></span>
-                        <span class="icon-bar middle"></span>
-                        <span class="icon-bar bottom"></span>
-                    </div>
-                </div>
-            </nav>
-        </header>
-		<div class="canvas-menu">
-            <div class="header-inner">
-                <div class="close"><i class="ti-close"></i></div>
-                <div class="menunav-container">
-                    <ul class="menu" id="nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <!-- <li><a href="#research">Research</a></li> -->
-                        <li><a href="#papers">Papers</a></li>
-                        <!-- <li><a href="#teaching">Teaching</a></li> -->
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#quotes">Favorite Quotes</a></li>
-                    </ul>
-                </div>		
+              <div class="col-md-9">
+                <h1>Taylor Olson</h1>
+                <p>Assistant Professor of Computer Science, University of Iowa</p>
+                <p><a target="_blank" href="https://www.linkedin.com/in/taylorolson23/"><i class="fa-brands fa-linkedin"></i></a> |
+                <a target="_blank" href="https://github.com/TeeOhh"><i class="fa-brands fa-github"></i></a> |
+                <a href="docs/CV_TaylorOlson.pdf" target="_blank" class="header-contact-info">CV</a> |
+                taylorolson50 (at) yahoo</p>
+              </div>
             </div>
+            <p class="mb-0 mt-3 fw-bold">Northwestern University</p>
+            <p class="mb-0">PhD, Computer Science (AI & Cognitive Science)</p>
+            <p class="mb-0">MS, Computer Science</p>
+            <p class="mb-0 fw-bold">University of Northern Iowa</p>
+            <p class="mb-0">BS, Computer Science</p>
+            <p class="mb-0">BA, Mathematics</p>
+            <p class="mb-0">Minor, Philosophy</p>
+          </div>
+      </div>
+    </div>
+      <div class="col-md-6">
+        <div class="p-3 border bg-light">
+          <h1>Theoretical Machine Ethics</h1>
+          <p>Trying to figure out WTH morality is and how to make moral AI systems (Artificial Moral Agents, or AMAs).</p>
+          <p class="mb-0">Doing so mathematically:</p>
+          <ul>
+            <li>Formalizing moral and epistemological theories;</li>
+            <li>Building formalisms for learning normative concepts;</li>
+            <li>Extending deontic, temporal, action, etc. logics.</li>
+          </ul>
+          <p>My dissertation <span style="font-style: italic">A Formal Theory of Norms</span> presented a mathematical formalism modeling the ability to learn and adapt to the norms of a population while staying grounded in moral principles. In other words... <span style="font-style: italic">it does as the Romans believe it should do, unless (for example) the Romans believe it should slaughter babies.</span> This work was done under advisement of Ken Forbus at Northwestern University. You can find the thesis <a href="#">here</a>.</p>
         </div>
-        
-        
-        <!-- End hero-section Area-->
-        <section class="Main_slider" id="home">
-            <div id="slider" class="rev_slider fullscreenbanner" data-version="5.4.1">
-                <ul>    <!-- SLIDE  -->
-                    <li data-index="rs-1678" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-rotate="0"  data-saveperformance="off"  data-title="Focus" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="image/home3/dummy.png" data-bgcolor="#4056A1" alt=""  data-lazyload="image/home3/transparent.png" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="p-3 border bg-light">
+          <h1>Teaching</h1>
+          <h4 class="mb-0">Fall</h4> 
+          <a href="machine-ethics-seminar.html">Machine Ethics Seminar</a></p>
+          <h4 class="mb-0">Spring</h4>
+          <a href="#">Intro to AI</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-3 border bg-light">
+          <h1>Publications</h1>
+          <ul id="paper-list">
+            <li><span">Olson, T.</span>, Salas-Damian R., & Forbus, K.D. (2025). <a class="paper" href="https://www.ifaamas.org/Proceedings/aamas2025/pdfs/p2699.pdf" target="_blank">Reasoning and Planning with Dynamic Social Norms (Extended Abstract).</a> AAMAS 2025.</li>
+            <li><span">Olson, T.</span>, & Forbus, K.D. (2024). <a class="paper" href="https://www.ijcai.org/proceedings/2024/53" target="_blank">Normative Testimony and Belief Functions: A Formal Theory of Norm Learning.</a> Proceedings of IJCAI 2024.</li>
+            <li><span">Olson, T.</span>, Salas-Damian R., & Forbus, K.D. (2024). <a class="paper" href="https://arxiv.org/abs/2407.04869" target="_blank">A Defeasible Deontic Calculus for Resolving Norm Conflicts.</a> Proceedings of the 11th Annual Conference on Advances in Cognitive Systems 2024. Palermo, Sicily, Italy.</li>
+            <li><span">Olson, T.</span> (2024). <a class="paper" href="docs/TowardsUnifyingDescriptivePrescriptive-Olson.pdf" target="_blank">Towards Unifying the Descriptive and Prescriptive for Machine Ethics.</a> In P. Wu, M. Salpukas, H.F. Wu, S. Ellsworth (Eds.), <a class="paper" href="https://shop.elsevier.com/books/trolley-crash/wu/978-0-443-15991-6?country=US&format=print&utm_source=google_ads&utm_medium=paid_search&utm_campaign=usapmax&gclid=CjwKCAjwjOunBhB4EiwA94JWsBMCYtEiMKkr8KJsT87el37mxo8K5d7OuO8Z40vqNG_C-Rb61mGVlxoCOuQQAvD_BwE&gclsrc=aw.ds" target="_blank">Trolley Crash: Approaching Key Metrics for Ethical AI Practitioners, Researchers, and Policy Makers</a>. (Chapter 5). Elsevier.</li>
+            <li><span">Olson, T.</span>, & Forbus, K. D. (2023, June). <a class="paper" href="https://ojs.aaai.org/index.php/AAAI/article/view/26402" target="_blank">Mitigating Adversarial Norm Training with Moral Axioms.</a> In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 37, No. 10, pp. 11882-11889).</li>
+            <li><span">Olson, T.</span> (2022). <a class="paper" href="docs/towards-unifying-descriptive-prescriptive.pdf" target="_blank">Towards Unifying the Descriptive and Prescriptive for Machine Ethics.</a> Proceedings of the AAAI 2022 Spring Symposium on "Approaches to Ethical Computing Metrics for Measuring AI’s Proficiency and Competency for Ethical Reasoning". Spring 2022.</li>
+            <li><span">Olson, T.</span> & Forbus, K. (2021). <a class="paper" href="https://www.qrg.northwestern.edu/papers/Files/QRG_Dist_Files/QRG_2021/ACS-21_paper_17.pdf" target="_blank"> Learning Norms via Natural Language Teachings.</a> Proceedings of the 9th Annual Conference on Advances in Cognitive Systems 2021.</li>
+            <hr>
+            <li><span">Olson, T.</span> (2018). (Unpublished). <a class="paper" href="docs/machine-learning-approach.pdf" target="_blank">A Machine Learning Approach to Solving Ethical Relativism.</a> University of Northern Iowa</li>
+            <li><span">Olson, T.</span> Nandini, E. Neal, J. Prater-Lee, C. (Summer 2017). (Unpublished). <a class="paper" href="docs/recommendation-system-developer.pdf" target="_blank">Recommendation System Developer.</a> Harvard University.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-1" 
-                            id="slide-1678-layer-3" 
-                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                            data-y="['middle','middle','middle','middle']" data-voffset="['40','20','20','20']" 
-                            data-width="['450','400','400','250']"
-                            data-height="['560','360','400','250']"
-                            data-whitespace="nowrap"
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 Taylor Olson. All rights reserved.
+  </footer>
 
-                            data-type="shape" 
-                            data-responsive_offset="on" 
-
-                            data-frames='[{"from":"x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","speed":1000,"to":"o:1;","delay":500,"ease":"Back.easeOut"},{"delay":"wait","speed":700,"to":"auto:auto;","ease":"Power2.easeInOut"}]'
-                            data-textAlign="['left','left','left','left']"
-                            data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]"
-                            data-paddingbottom="[0,0,0,0]"
-                            data-paddingleft="[0,0,0,0]"
-
-                            style="z-index: 2;background-color:rgba(0, 0, 0, 0);border-color:rgba(0, 0, 0, 0);border-width:0px;filter:blur(5px);-webkit-filter:blur(5px);-moz-filter:blur(5px);-o-filter:blur(5px);-ms-filter:blur(5px);"> 
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption   tp-resizeme rs-parallaxlevel-3" 
-                            id="slide-1678-layer-1" 
-                            data-x="['center','center','center','center']" data-hoffset="['0','50','20','10']" 
-                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-55','-180','-50','-80']" 
-                            data-width="none"
-                            data-height="none"
-                            data-whitespace="nowrap"
-
-                            data-type="image" 
-                            data-responsive_offset="on" 
-
-                            data-frames='[{"from":"y:50px;opacity:0;","speed":800,"to":"o:1;","delay":650,"ease":"Back.easeOut"},{"delay":"wait","speed":700,"to":"auto:auto;","ease":"Power2.easeInOut"}]'
-                            data-textAlign="['left','left','left','left']"
-                            data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]"
-                            data-paddingbottom="[0,0,0,0]"
-                            data-paddingleft="[0,0,0,0]"
-
-                            style="z-index: 8;border-width:0px;"><img src="image/home3/dummy.png" alt="" data-ww="['900px','800','750px','500']" data-hh="['850px','750','750px','500']" width="600" height="1000" data-lazyload="image/headshot_vector.png" data-no-retina> 
-                        </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-4" 
-                            id="slide-1678-layer-2" 
-                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                            data-y="['middle','middle','middle','middle']" data-voffset="['20','25','25','25']" 
-                            data-width="['657','550','550','400']"
-                            data-height="['657','550','550','430']"
-                            data-whitespace="nowrap"
-
-                            data-type="shape" 
-                            data-responsive_offset="on" 
-
-                            data-frames='[{"from":"x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","speed":1000,"to":"o:1;","delay":1100,"ease":"Back.easeOut"},{"delay":"wait","speed":700,"to":"auto:auto;","ease":"Power2.easeInOut"}]'
-                            data-textAlign="['left','left','left','left']"
-                            data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]"
-                            data-paddingbottom="[0,0,0,0]"
-                            data-paddingleft="[0,0,0,0]"
-
-                            style="z-index: 5;background-color:rgba(0, 0, 0, 0);border-color:rgba(0, 0, 0, 0);border-width:0px;"> 
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-gradientbg" 
-                            id="slide-1678-layer-15" 
-                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
-                            data-width="full"
-                            data-height="full"
-                            data-whitespace="nowrap"
-
-                            data-type="shape" 
-                            data-basealign="slide" 
-                            data-responsive_offset="off" 
-                            data-responsive="off"
-                            data-frames='[{"from":"opacity:0;","speed":300,"to":"o:0.75;","delay":0,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
-                            data-textAlign="['left','left','left','left']"
-                            data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]"
-                            data-paddingbottom="[0,0,0,0]"
-                            data-paddingleft="[0,0,0,0]"
-
-                            style="z-index: 16;background-color:rgba(0, 0, 0, 0);border-color:rgba(0, 0, 0, 0);border-width:0px;"> 
-                        </div>
-
-                        <!-- LAYER NR. 5 -->
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-7" 
-                            id="slide-1678-layer-12" 
-                            data-x="['left','center','center','center']" data-hoffset="['220','-100','-100','-60']" 
-                            data-y="['middle','middle','middle','middle']" data-voffset="['-60','30','30','30']" 
-                            data-fontsize="['42','42','42','42']"
-                            data-lineheight="['60','60','60','50']"
-                            data-width="none"
-                            data-height="none"
-                            data-whitespace="nowrap"
-
-                            data-type="text" 
-                            data-responsive_offset="on" 
-
-                            data-frames='[{"from":"y:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1550,"ease":"Power4.easeOut"},{"delay":"wait","speed":700,"to":"auto:auto;","ease":"Power2.easeInOut"}]'
-                            data-textAlign="['center','center','center','center']"
-                            data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]"
-                            data-paddingbottom="[0,0,0,0]"
-                            data-paddingleft="[0,0,0,0]"
-
-                            style="z-index: 17; white-space: nowrap; font-size: 42px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family: 'Poppins', sans-serif;border-width:0px;letter-spacing:0px;text-transform:uppercase;">what's up, i'm
-                        </div>
-
-                        <!-- LAYER NR. 6 -->
-                        <div class="tp-caption   tp-resizeme rs-parallaxlevel-6" 
-                            id="slide-1678-layer-13" 
-                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                            data-y="['middle','middle','middle','middle']" data-voffset="['220','240','240','240']" 
-                            data-fontsize="['170','100','100','80']"
-                            data-lineheight="['180','90','100','80']"
-                            data-width="none"
-                            data-height="none"
-                            data-whitespace="nowrap"
-
-                            data-type="text" 
-                            data-responsive_offset="on" 
-
-                            data-frames='[{"from":"y:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1650,"ease":"Power4.easeOut"},{"delay":"wait","speed":700,"to":"auto:auto;","ease":"Power2.easeInOut"}]'
-                            data-textAlign="['center','center','center','center']"
-                            data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]"
-                            data-paddingbottom="[0,0,0,0]"
-                            data-paddingleft="[0,0,0,0]"
-
-                            style="z-index: 18; white-space: nowrap; font-size: 40px; line-height: 35px; font-weight: 800; color: rgba(255, 255, 255, 1);font-family: 'Poppins', sans-serif;border-width:0px;letter-spacing:0px;text-transform:uppercase;"><span style="color: #f1b200">T</span>aylor <br/>
-                            <span style="color: #f1b200">O</span>lson <br/>
-                        </div>
-                     </li>
-                </ul>
-                <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div> 
-            </div>
-        </section>
-        <!--End rev_slider area-->
-        
-        <!-- Start about-two-area -->
-        <section class="about-two-area bg-c" id="about">
-            <div class="container">
-                <div class="about-two-content">
-                    <div class="sec-title3">
-                        <h2 class="section-title-under" data-line="01">Get in touch</h2>
-                    </div>
-                     <div class="header-contact-infos">
-                        <a href="docs/CV_TaylorOlson.pdf" target="_blank" class="header-contact-info"><i class="fa fa-file-text" aria-hidden="true"></i>CV</a>
-                        <a class="header-contact-info"><i class="fa fa-map-marker" aria-hidden="true"></i>PhD Candidate, AI, Northwestern University</a>
-                        <a class="header-contact-info"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        taylorolson at u.northwestern.edu</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End about-two-area -->
-        <!--========= Start expertise three area =========-->
-        <!-- <section style="background: #4056a1" class="expertise-three-area" id="research">
-            <div class="container">
-                <div class="sec-title3 sec-right white-color">
-                    <h2 data-line="02">Research</h2>
-                    <p>Machine Ethicist</p>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-xs-12 expertise-item">
-                        <span style="color: #f1b200" class="ti-thumb-up"></span>
-                        <p>How do we all know that during a basketball game it is strange to whisper to a teammate?</p>
-                        <ul>
-                            <li>I am attempting to formally model how we learn and reason (or how we want our machines to reason) about norms like above, as well as more morally salient norms.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-<!-- TO DO: IMPLEMENT YEAR FILTERING FOR PAPERS         -->
-<!-- <ul id="itemList">
-  <li data-category="fruit">Apple</li>
-  <li data-category="vegetable">Carrot</li>
-  <li data-category="fruit">Banana</li>
-  <li data-category="vegetable">Broccoli</li>
-  <li data-category="fruit">Grapes</li>
-</ul>
-
-<button id="showFruits">Show Fruits</button>
-<button id="showVegetables">Show Vegetables</button>
-<button id="showAll">Show All</button>
-
-$(document).ready(function () {
-  // Show only items with data-category="fruit"
-  $('#showFruits').click(function () {
-    $('#itemList li').hide(); // Hide all items
-    $('#itemList li[data-category="fruit"]').show(); // Show only fruits
-  });
-
-  // Show only items with data-category="vegetable"
-  $('#showVegetables').click(function () {
-    $('#itemList li').hide(); // Hide all items
-    $('#itemList li[data-category="vegetable"]').show(); // Show only vegetables
-  });
-
-  // Show all items
-  $('#showAll').click(function () {
-    $('#itemList li').show(); // Show all items
-  });
-}); -->
-
-        <!--==========start papers one area========-->
-        <section class="awards-two-area" id="papers">
-            <div class="container">
-                <div class="sec-title3 sec-right">
-                    <h2 data-line="02">Papers</h2>
-                    <p>A collection of my writings</p>
-                </div>
-                <div style="margin-top: 100px" class="row">
-                    <ul id="paper-list">
-                        <li><span style="font-weight: bold">Olson, T.</span>, Salas-Damian R., & Forbus, K.D. (2025). <a class="paper" href="https://www.ifaamas.org/Proceedings/aamas2025/pdfs/p2699.pdf" target="_blank">Reasoning and Planning with Dynamic Social Norms. (Extended Abstract) AAMAS-25.</a></li>
-                        <li><span style="font-weight: bold">Olson, T.</span>, & Forbus, K.D. (2024). <a class="paper" href="https://www.ijcai.org/proceedings/2024/53" target="_blank">Normative Testimony and Belief Functions: A Formal Theory of Norm Learning.</a> Proceedings of IJCAI 2024.</li>
-                        <li><span style="font-weight: bold">Olson, T.</span>, Salas-Damian R., & Forbus, K.D. (2024). <a class="paper" href="https://arxiv.org/abs/2407.04869" target="_blank">A Defeasible Deontic Calculus for Resolving Norm Conflicts.</a> Proceedings of the 11th Annual Conference on Advances in Cognitive Systems 2024. Palermo, Sicily, Italy.</li>
-                        <li><span style="font-weight: bold">Olson, T.</span> (2024). <a class="paper" href="docs/TowardsUnifyingDescriptivePrescriptive-Olson.pdf" target="_blank">Towards Unifying the Descriptive and Prescriptive for Machine Ethics.</a> In P. Wu, M. Salpukas, H.F. Wu, S. Ellsworth (Eds.), <a class="paper" href="https://shop.elsevier.com/books/trolley-crash/wu/978-0-443-15991-6?country=US&format=print&utm_source=google_ads&utm_medium=paid_search&utm_campaign=usapmax&gclid=CjwKCAjwjOunBhB4EiwA94JWsBMCYtEiMKkr8KJsT87el37mxo8K5d7OuO8Z40vqNG_C-Rb61mGVlxoCOuQQAvD_BwE&gclsrc=aw.ds" target="_blank">Trolley Crash: Approaching Key Metrics for Ethical AI Practitioners, Researchers, and Policy Makers</a>. (Chapter 5). Elsevier.</li>
-                        <li><span style="font-weight: bold">Olson, T.</span>, & Forbus, K. D. (2023, June). <a class="paper" href="https://ojs.aaai.org/index.php/AAAI/article/view/26402" target="_blank">Mitigating Adversarial Norm Training with Moral Axioms.</a> In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 37, No. 10, pp. 11882-11889).</li>
-                        <li><span style="font-weight: bold">Olson, T.</span> (2022). <a class="paper" href="docs/towards-unifying-descriptive-prescriptive.pdf" target="_blank">Towards Unifying the Descriptive and Prescriptive for Machine Ethics.</a> Proceedings of the AAAI 2022 Spring Symposium on "Approaches to Ethical Computing Metrics for Measuring AI’s Proficiency and Competency for Ethical Reasoning". Spring 2022.</li>
-                        <li><span style="font-weight: bold">Olson, T.</span> & Forbus, K. (2021). <a class="paper" href="https://www.qrg.northwestern.edu/papers/Files/QRG_Dist_Files/QRG_2021/ACS-21_paper_17.pdf" target="_blank"> Learning Norms via Natural Language Teachings.</a> Proceedings of the 9th Annual Conference on Advances in Cognitive Systems 2021.</li>
-                        <hr>
-                        <li><span style="font-weight: bold">Olson, T.</span> (2018). (Unpublished). <a class="paper" href="docs/machine-learning-approach.pdf" target="_blank">A Machine Learning Approach to Solving Ethical Relativism.</a> University of Northern Iowa</li>
-                        <li><span style="font-weight: bold">Olson, T.</span> Nandini, E. Neal, J. Prater-Lee, C. (Summer 2017). (Unpublished). <a class="paper" href="docs/recommendation-system-developer.pdf" target="_blank">Recommendation System Developer.</a>Harvard University.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!--==========start teaching two area========-->
-<!--         <section class="teaching-two-area" id="teaching">
-            <div class="container">
-                <div class="sec-title3 sec-right">
-                    <h2 data-line="03">Teaching</h2>
-                    <p>I typically alternate between a Machine Ethics seminar of my own making and an AI course in the CS curriculum.</p>
-                </div>
-                <div style="margin-top: 100px" class="row">
-                    <ul id="course-teaching-list">
-                        <li>Introduction to AI.</a> Spring 2026. University of Iowa.</li>
-                        <li><a class="course" href="https://taylorlolson.com/machine-ethics-seminar.html">Machine Ethics Seminar.</a> Fall 2025. University of Iowa.</li>
-                    </ul>
-                    <p>During my PhD at Northwestern, I also taught Ken Forbus' introductory course on cognitive modeling. Details can be found <a class="course" href="https://users.cs.northwestern.edu/~forbus/cogsci207/overview.htm" targt="_blank">here</a>.
-                </div>
-            </div>
-        </section> -->
-        <!--========= Start experience two area =========-->
-        <section style="background: #4056a1;" class="experience-two-area" id="education">
-            <div class="container">
-                <div class="sec-title2 sec-left" style="color: white">
-                    <h2 data-line="04" style="color: white">Education</h2>
-                    <p>Places I have studied</p>
-                </div>
-                <div style="color: white">
-                    <div class="row row-experience">
-                        <div class="col-sm-2">
-                            <h5 class="experience-date" style="color: white">Sept. 2018<br/>to Present</h5>
-                        </div>
-                        <div class="col-sm-10 ex-content media">
-                            <div class="media-left">
-                                <h4>Northwestern University</h4>
-                            </div>
-                            <div class="media-body">   
-                                <p>M.S. & PhD Computer Science</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-experience">
-                        <div class="col-sm-2">
-                            <h5 class="experience-date" style="color: white">August 2014<br/>to May 2018</h5>
-                        </div>
-                        <div class="col-sm-10 ex-content media">
-                            <div class="media-left">
-                                <h4>University of Northern Iowa</h4>
-                            </div>
-                            <div class="media-body">
-                                <p>B.S. Computer Science, B.A. Mathematics, Philosophy Minor</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-experience">
-                        <div class="col-sm-2">
-                            <h5 class="experience-date" style="color: white">August 2012<br/>to May 2014</h5>
-                        </div>
-                        <div class="col-sm-10 ex-content media">
-                            <div class="media-left">
-                                <h4>Kirkwood Community College</h4>
-                            </div>
-                            <div class="media-body">
-                                <p>Mechanical Engineering Program</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--========= End experience two area =========-->
-        <!--========= End expertise three area =========-->
-                <!--========= Start awards two area =========-->
-        <section class="experience-two-area" id="experience">
-            <div class="container">
-                <div class="sec-title3 sec-right">
-                    <h2 data-line="05">Experience</h2>
-                    <p>My professional background</p>
-                </div>
-                <div>
-                    <div class="row row-experience">
-                        <div class="col-sm-2">
-                            <h5 class="experience-date">May 2016<br/>to Present</h5>
-                        </div>
-                        <div class="col-sm-10 ex-content media">
-                            <div class="media-left">
-                                <h4 class="title">Freelance Web Development</h4>
-                                <h5>Somewhere comfortable with mediocre coffee</h5>
-                            </div>
-                            <div class="media-body">   
-                                <p>Design, setup, and develop fully functional and responsive websites for clients. Develop both WordPress and custom sites.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-experience">
-                        <div class="col-sm-2">
-                            <h5 class="experience-date">June 2017<br/>to August 2017</h5>
-                        </div>
-                        <div class="col-sm-10 ex-content media">
-                            <div class="media-left">
-                                <h4 class="title">Research Intern</h4>
-                                <h5>Harvard University</h5>
-                            </div>
-                            <div class="media-body">
-                                <p>Developed a course recommender system using various methods of natural language processing. Developed machine learning classifiers to intelligently gather textual data.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-experience">
-                        <div class="col-sm-2">
-                            <h5 class="experience-date">May 2016<br/>to August 2016</h5>
-                        </div>
-                        <div class="col-sm-10 ex-content media">
-                            <div class="media-left">
-                                <h4 class="title">Programming Intern</h4>
-                                <h5>VGM Forbin</h5>
-                            </div>
-                            <div class="media-body">
-                                <p>Performed HTML5 validation, maintained staging sites, improved functionality of websites in C# and Python Django, involved in website setup and planning.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-experience">
-                        <div class="col-sm-2">
-                            <h5 class="experience-date">August 2012<br/>to Sept. 2015</h5>
-                        </div>
-                        <div class="col-sm-10 ex-content media">
-                            <div class="media-left">
-                                <h4 class="title">College Basketball</h4>
-                                <h5>Kirkwood CC & University of Northern Iowa</h5>
-                            </div>
-                            <div class="media-body">
-                                <p>Starting All-Region point guard at Kirkwood CC. Transferred to UNI and unfortunately, due to reocurring injuries, had to step away from the game after one year.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--========= End experience two area =========-->
-        <!--========= Start portfolio three area =========-->
-        <section class="portfolio-three-area bg-c" id="projects">
-            <div class="container">
-                <div class="sec-title3 sec-left">
-                    <h2 data-line="06">Projects</h2>
-                    <p>A few of my creations</p>
-                </div>
-                <ul class="row m0 portfolio-filter" id="filter">
-                    <li class="active" data-filter="*">All</li>
-                    <li data-filter=".ai">AI</li>
-                    <li data-filter=".web">web dev</li>
-                </ul>
-                <div id="portfolio-grid" class="row portfolio-grid">
-                    <div class="col-sm-4 col-xs-6 portfolio-item ai">
-                        <a target="_blank" href="https://github.com/TeeOhh/Norms-Reasoner">
-                                <div class="portfolio-image">
-                                    <img src="image/home-1/portfolio/NormsReasoner-interface.png" alt="portfolio">
-                                    <div class="texts">
-                                        <h5>Norms Reasoner</h5>
-                                        <p>An executable that runs our model of moral intuition and construction. The model can evaluate situations as good, bad, or neutral given moral principles and training data. It will also give justifications for it's evaluations.</p>
-                                    </div>
-                                </div>
-                        </a>
-                    </div>
-                	<div class="col-sm-4 col-xs-6 portfolio-item ai">
-	                    <a target="_blank" href="https://github.com/TeeOhh/tRECS">
-	                            <div class="portfolio-image">
-	                                <img src="image/home-1/portfolio/trecs.png" alt="portfolio">
-	                                <div class="texts">
-	                                    <h5>tRECS</h5>
-	                                    <p>Machine learning course recommender system for Harvard University</p>
-	                                </div>
-	                            </div>
-	                    </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 portfolio-item ai">
-                        <a target="_blank" href="https://github.com/TeeOhh/classy_tweet">
-                            <div class="portfolio-image">
-                                <img src="image/home-1/portfolio/ethics.png" alt="portfolio">
-                                <div class="texts">
-                                    <h5>Classy Tweet</h5>
-                                    <p>A machine learning approach to solving ethical relativism</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 portfolio-item ai">
-                        <a href="#projects" >
-                            <div class="portfolio-image">
-                                <img src="image/home-1/portfolio/umls.png" alt="portfolio">
-                                <div class="texts">
-                                    <h5>Interface for UMLS Similarity</h5>
-                                    <p>An interface for easier calculation of similarity scores between drug and compound names</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 portfolio-item web">
-                        <a target="_blank" href="https://thinkingwithnumbers.com/">
-                            <div class="portfolio-image">
-                                <img src="image/home-1/portfolio/twn.png" alt="portfolio">
-                                <div class="texts">
-                                    <h5>Thinking With Numbers</h5>
-                                    <p>Web design & development for an online math education platform</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 portfolio-item web">
-                        <a target="_blank" href="https://www.qcanimaler.org/">
-                            <div class="portfolio-image">
-                                <img src="image/home-1/portfolio/qcanimaler.PNG" alt="portfolio">
-                                <div class="texts">
-                                    <h5>Animal Emergency Center of the Quad Cities</h5>
-                                    <p>Web design & development for an animal emergency center.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 portfolio-item web">
-                        <a target="_blank" href="https://gcrhba.org/">
-                            <div class="portfolio-image">
-                                <img src="image/home-1/portfolio/gcrhba.PNG" alt="portfolio">
-                                <div class="texts">
-                                    <h5>Greater Cedar Rapids Housing & Building Association</h5>
-                                    <p>Web design and development for a local housing & building association.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 portfolio-item web">
-                        <a href="#projects">
-                            <div class="portfolio-image">
-                                <img src="image/home-1/portfolio/slykhuis.png" alt="portfolio">
-                                <div class="texts">
-                                    <h5>Slykhuis Memorial</h5>
-                                    <p>Volunteer web design & development project for a local memorial golf outing</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--========= End portfolio three area =========-->
-        <!--==========start testimonial two area========-->
-        <section style="background: #4056a1" class="testimonial-two-area" id="quotes">
-            <div class="container">
-                <div class="sec-title3">
-                    <h2 data-line="07">Favorite Quotes</h2>
-                </div>
-                <div class="testimonial-slider">
-                    <span class="testimonial-quotes">‘’</span>
-                    <div class="testimonial-carousel owl-carousel">
-                        <div class="testimonial-item">
-                            <p class="testimonial-p">The people who are crazy enough to think they can change the world, are the ones who do.</p>
-                            <h4 class="title">Steve Jobs</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p class="testimonial-p">My religion is very simple. My religion is kindness.</p>
-                            <h4 class="title">Dalai Lama</h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p class="testimonial-p">Excellence is not a gift, but a skill that takes practice. We do not act ‘rightly’ because we are ‘excellent’, in fact we achieve ‘excellence’ by acting ‘rightly’.</p>
-                            <h4 class="title">Plato</h4>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-        </section>
-        <!--==========End testimonial two area========-->
-        <!--==========End awards two area========-->
-        
-        <!--=============Start footer-area ===========-->
-        <footer class="footer-area">
-            <div class="container">
-                <div class="row display-f bg-color">
-                    <div class="col-md-3 col-sm-4 col-left">
-                        <div class="sec-title">
-                            <h6>&copy; 2025 / www.taylorlolson.com</h6>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-8 col-right f-right">
-                        <div class="footer-links">
-                        </div>
-                        <div class="footer-social">
-                            <a target="_blank" href="https://www.linkedin.com/in/taylorolson23/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            <a target="_blank" href="https://github.com/TeeOhh"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!--=============End footer-area ===========-->
-        <!-- js -->
-        <script type="text/javascript" src="js/jquery-2.2.4.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script src="vendors/waypoint/waypoints.min.js"></script>
-        <script src="vendors/countdown/jquery.counterup.min.js"></script>
-        
-        <script type="text/javascript" src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
-        <script type="text/javascript" src="vendors/isotope/isotope-min.js"></script>
-        <script type="text/javascript" src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script type="text/javascript" src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="js/jquery-imagefill.js"></script>
-        <script type="text/javascript" src="js/apear.js"></script>
-        <script type="text/javascript" src="js/wow.js"></script>
-        <script type="text/javascript" src="js/jquery.stellar.js"></script>
-        <!-- REVOLUTION JS FILES -->
-		<script type="text/javascript" src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <script type="text/javascript" src="vendors/revolution/revolution-addons/countdown/revolution.addon.countdown.min.js"></script>
-        <script type="text/javascript" src="vendors/revolution/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js"></script>
-		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
-		<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-		<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-		<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-		<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-		<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-		<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-		<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-		<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-		<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
-        <script type="text/javascript" src="js/jquery-nav.js"></script>
-        <script type="text/javascript" src="js/nicescroll.js"></script>
-        <!-- custom js -->
-        <script type="text/javascript" src="js/custom.js"></script>
-    </body>
+  <!-- Bootstrap JS Bundle -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
 </html>
